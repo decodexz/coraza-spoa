@@ -7,9 +7,7 @@ services:
       - 8080:8080
   coraza:
     restart: unless-stopped
-    build:
-      context: .
-      target: coreruleset
+    image: vouu/coraza-spoa:29-02-2024
   haproxy:
     restart: unless-stopped
     image: haproxy:2.7-alpine
